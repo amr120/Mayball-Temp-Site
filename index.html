@@ -24,12 +24,48 @@
 </head>
 
 
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
 
-<body class="scroll" style="background-color: black; overflow-x: hidden;">
-  
+  .hero {
+    min-height: calc(100vh - 100px); /* Adjust this value based on the height of your footer */
+  }
+  .herotext {
+    text-shadow: none;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+
+
+
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .hero {
+    background-color: #8B0000; /* Maroon Red */
+    color: #000000; /* Black */
+  }
+</style>
+
+
+
+<body class="scroll">
 
   <!-- Socials and Email -->
-  <div class="site-navbar-wrap" style="background-color: #181818">
+  <div class="site-navbar-wrap" style="background-color: #013220;">
     <div class="site-navbar-top">
       <div class="container py-3">
         <div class="row align-items-center">
@@ -47,13 +83,6 @@
           </div>
           <div class="col-6 text-right">
             <div class="mr-auto">
-              <a href="https://vm.tiktok.com/ZMLFMc7nC/" class="p-2 pl-0"><span class=""><svg
-                    xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-tiktok"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
-                  </svg>
-                </span></a>
               <a href="https://www.facebook.com/pembrokemayball/" class="p-2 pl-0"><span class=""><svg
                     xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-facebook"
                     viewBox="0 0 16 16">
@@ -75,43 +104,29 @@
 
 
   <!-- home -->
-  <div id="p1" class="hero d-flex align-items-center" style="height: 100vh; display: flex; background-color: #181818; background-image: url('images/collegeGrass.jpg');">
+  <!-- Hero Section -->
+  <div id="p1" class="hero d-flex align-items-center" style="height: 100vh; display: flex;">
     <div class="container justify-content-center"
-      style="border-radius: 25px; background-color: rgba(153, 153, 49, 0); width: 800px; height: fit-content; border-width: 5px; max-height: 55vh;">
-
+      style="border-radius: 25px; width: 800px; height: fit-content; border-width: 5px; max-height: 55vh; background-color: transparent;">
+      
       <div class="row" style="justify-content: center;">
         <p class="herotext">Pembroke May Ball</p>
       </div>
 
+      <div class="row" style="justify-content: center;">
+        <p class="herotext" style="font-size: 3em;">25th June 2025</p>
       </div>
 
-
-      <div>
-        <div class="row" style="justify-content: center;">
-          <p class="herotext">25st June 2025</p>
-        </div>
-          
-        
-        
-        
+      <div class="row" style="justify-content: center; margin-top: 20px;">
+        <a href="https://lists.cam.ac.uk/sympa/subscribe/pem-mayball?previous_action=info" class="btn btn-primary" target="_blank" style="background-color: #013220; border-color: #013220;">Sign Up for Our Mailing List</a>
+      </div>
     </div>
   </div>
   
-
-
-    
-
-  <div class="hero" style="background-color: #000000; height: fit-content;">
-    <div class="container text-center py-5">
-      <p class="text-center"
-        style="color: rgb(143, 143, 143); text-align: center; text-shadow: 2px 2px #000000; font-size: 1.5rem;">
-        Pembroke College<br>
-        Trumpington St<br>
-        Cambridge<br>
-        CB2 1RF<br>
-      </p>
-    </div>
-  </div>
+  <!-- Footer Section -->
+  <footer class="footer text-center" style="background-color: #013220;">
+    <p class="mb-0">© 2025 Pembroke May Ball. All Rights Reserved.</p>
+  </footer>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="/js/noframework.waypoints.min.js"></script>
